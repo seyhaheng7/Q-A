@@ -131,6 +131,9 @@ hr{
   border-radius: 8px;
   background-image: -webkit-linear-gradient(270deg, #3dc01b, #3dc01b);
   background-image: linear-gradient(180deg, #3dc01b, #3dc01b);
+  &:hover{
+      color:#fff;
+  }
 }
 .mar50{
     margin-top: 50px;
