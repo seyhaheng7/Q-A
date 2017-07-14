@@ -1,8 +1,6 @@
 = simple_form_for [@subject, @quiz] do |f|
   = f.error_notification
 
-  -# = f.association :subject
-  -# = f.association :user
   = f.simple_fields_for :quiz_answers do |qq|
     %ul
       = render 'quiz_answer_fields', f: qq

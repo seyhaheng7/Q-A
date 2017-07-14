@@ -34,6 +34,18 @@
               - else
                 = link_to "Login", new_user_session_path
 
+
+    .top-promo
+      .containerize
+        .row.w-row
+          .column.w-col.w-col-3
+            .div-block
+          .w-col.w-col-6
+            %h1.heading Simple app for Better Interview Skills
+            .text-block Learn how to land the job with Big Interview’s powerful virtual interview practice.
+          .w-col.w-col-3
+            %a.button.w-button{:href => "#"} Win this Interview
+
     .container
       - flash.each do |name, msg|
         = content_tag :div, class: "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable", role: "alert" do
