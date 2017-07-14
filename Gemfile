@@ -41,3 +41,5 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'nested_form'
 gem "cocoon"
+gem 'rails_12factor', group: :production
+
