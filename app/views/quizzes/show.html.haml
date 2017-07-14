@@ -14,12 +14,12 @@
   %dd= @quiz.subject.name
   %ol
   - @quiz.quiz_answers.each do |quiz_answer|
-    = quiz_answer.question.title
+    %b
+      = quiz_answer.question.title
     %ul
       - quiz_answer.question.answers.each do |answer|
-        %li
-          %b
-            = answer.title
+        %li  
+          = answer.title
           - if answer.correct?
             = fa_icon 'check',{style: "color: #83b541;"}
             %span{style: "color: #83b541;"} correct
