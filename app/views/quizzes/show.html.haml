@@ -1,0 +1,26 @@
+-# .page-header
+-#   = link_to quizzes_path, class: 'btn btn-default' do
+-#     %span.glyphicon.glyphicon-list-alt
+-#     Back
+-#   = link_to edit_quiz_path(@quiz), class: 'btn btn-primary' do
+-#     %span.glyphicon.glyphicon-pencil
+-#     Edit
+-#   %h1 Show quiz
+
+%dl.dl-horizontal
+  %dt User:
+  %dd= @quiz.user.email
+  %dt Subject:
+  %dd= @quiz.subject.name
+  %ol
+  - @quiz.quiz_answers.each do |quiz_answer|
+    = quiz_answer.question.title
+    %ul
+      - quiz_answer.question.answers.each do |answer|
+        %li
+          = answer.title
+          - if answer.correct?
+            = fa_icon 'check'
+          - elsif !answer.correct? && quiz_answer.answer == answer 
+            = fa_icon 'times'
+            

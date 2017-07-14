@@ -1,0 +1,17 @@
+.page-header
+  -# = link_to questions_path, class: 'btn btn-default' do
+  -#   %span.glyphicon.glyphicon-list-alt
+  -#   Back
+  -# = link_to edit_question_path(@question), class: 'btn btn-primary' do
+  -#   %span.glyphicon.glyphicon-pencil
+  -#   Edit
+  .section-title
+    %h1 
+      Question 
+      = @question.id
+      = @question.title
+
+    - @question.answers.each do |ans|
+      .answer-post{ class: ('correct' if ans.correct?)}
+        = ans.title 
+  

@@ -1,0 +1,10 @@
+.page-header
+  = link_to new_question_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New Question
+  %center
+    %h2 Listing questions
+  - @questions.each do |question|
+    .question-item
+      %header.question-title
+        = link_to question.title, question

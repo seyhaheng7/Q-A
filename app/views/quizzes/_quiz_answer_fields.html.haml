@@ -1,0 +1,4 @@
+%li
+  = f.object.question_title
+  = f.input :question_id, as: :hidden
+  = f.association :answer, as: :radio_buttons, collection: f.object.question.answers

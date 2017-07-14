@@ -1,0 +1,6 @@
+.row
+  - @subjects.each do |subject|
+    .col-md-4
+      = link_to new_subject_quiz_path(subject), class: "" do
+        .sub-content.flex.center.middle
+          = subject.name

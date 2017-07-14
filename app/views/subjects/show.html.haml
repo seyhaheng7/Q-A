@@ -1,0 +1,12 @@
+.page-header
+  = link_to subjects_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_subject_path(@subject), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show subject
+
+%dl.dl-horizontal
+  %dt Name:
+  %dd= @subject.name
