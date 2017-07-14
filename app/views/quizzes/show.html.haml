@@ -18,7 +18,8 @@
     %ul
       - quiz_answer.question.answers.each do |answer|
         %li
-          = answer.title
+          %b
+            = answer.title
           - if answer.correct?
             = fa_icon 'check',{style: "color: #83b541;"}
             %span{style: "color: #83b541;"} correct
