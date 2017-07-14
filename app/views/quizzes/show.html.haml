@@ -20,7 +20,8 @@
         %li
           = answer.title
           - if answer.correct?
-            = fa_icon 'check'
+            = fa_icon 'check',{style: "color: #83b541;"}
+            %span{style: "color: #83b541;"} correct
           - elsif !answer.correct? && quiz_answer.answer == answer 
-            = fa_icon 'times'
+            = fa_icon 'times',{style: "color: #ff657a;"}
             
