@@ -15,14 +15,3 @@
  *= require_self
  */
 
-.navbar{
-	background: #fff;
-	border-radius: 0;
-  margin-bottom:0;
-}
-.brand{
-	font-weight: 700;
-}
-.correct{
-  background: #83b541;
-}

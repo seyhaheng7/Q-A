@@ -2,7 +2,7 @@
   = f.error_notification
 
   = f.simple_fields_for :quiz_answers do |qq|
-    %ul
+    %ol
       = render 'quiz_answer_fields', f: qq
 
   .form-actions

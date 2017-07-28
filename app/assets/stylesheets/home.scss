@@ -58,6 +58,17 @@ hr{
     height: 160px;
 }
 
+.navbar{
+    background: #fff;
+    border-radius: 0;
+  margin-bottom:0;
+}
+.brand{
+    font-weight: 700;
+}
+.correct{
+  background: #83b541;
+}
 
 
 .navbar {
@@ -118,7 +129,7 @@ hr{
 }
 
 .div-block {
-  height: 154px;
+  height: 155px;
   background-image: url('blog-header.png');
   background-position: 50% 0px;
   background-size: contain;
@@ -136,5 +147,5 @@ hr{
   }
 }
 .mar50{
-    margin-top: 50px;
+    margin-top: 20px;
 }

@@ -6,11 +6,13 @@
     = f.input :title
     = f.association :subject
 
+
   %h3 answers
   #answers
     = f.simple_fields_for :answers do |answers|
       = render 'answer_fields', f: answers
     .links
       = link_to_add_association 'add answers', f, :answers
+      
   .form-actions
     = f.button :submit

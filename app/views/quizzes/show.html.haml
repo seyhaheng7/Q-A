@@ -13,7 +13,9 @@
   %dt Subject:
   %dd= @quiz.subject.name
   %ol
-  - @quiz.quiz_answers.each do |quiz_answer|
+  - @quiz.quiz_answers.each_with_index do |quiz_answer, index|
+    = index +  1
+    %span .
     %b
       = quiz_answer.question.title
     %ul
@@ -25,5 +27,4 @@
             %span{style: "color: #83b541;"} correct
           - elsif !answer.correct? && quiz_answer.answer == answer 
             = fa_icon 'times',{style: "color: #ff657a;"}
-            %span{style: "color: #ff657a;"} you have chosen this answer
-            
+            %span{style: "color: #ff657a;"} you have chosen this answer      
